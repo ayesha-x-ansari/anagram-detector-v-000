@@ -16,7 +16,7 @@ describe 'Anagram' do
     expect(listen).to eq(['inlets'])
   end
 
-  xit 'should detect multiple anagrams' do
+  it 'should detect multiple anagrams' do
     detector = Anagram.new('allergy')
     allergy = detector.match %w(gallery ballerina regally clergy largely leading)
     expect(allergy).to eq(['gallery', 'regally', 'largely'])
