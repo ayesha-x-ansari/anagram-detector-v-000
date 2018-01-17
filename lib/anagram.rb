@@ -12,6 +12,6 @@ class Anagram
     puts matched
   end
 end
-string = ["world", "world", "zombies", "pants" "dipa"]
+string = ["world", "world", "zombies", "pants" "diap"]
 diaper = Anagram.new("diap")
 diaper.match(string)
