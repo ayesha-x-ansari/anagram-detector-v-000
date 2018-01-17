@@ -7,9 +7,8 @@ class Anagram
   end
 
   def match(string)
-    split_word = word.split("").sort
-    matched  = string.collect{|w| w.split("").sort   ==  @word.split("").sort}
-    puts matched
+    string.collect{|w| w.split("").sort   ==  @word.split("").sort}
+    #puts matched
   end
 end
 string = ["padi", "dipa", "zombies", "pants" "diap"]
