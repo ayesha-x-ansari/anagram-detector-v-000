@@ -4,7 +4,7 @@ describe 'Anagram' do
     expect(diaper.match(%w(hello world zombies pants dipper))).to eq([])
   end
 
-  xit 'should detect a simple anagram' do
+  it 'should detect a simple anagram' do
     detector = Anagram.new('ba')
     ba = detector.match(['ab', 'abc', 'bac'])
     expect(ba).to eq(['ab'])
