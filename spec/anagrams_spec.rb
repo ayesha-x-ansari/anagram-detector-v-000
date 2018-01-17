@@ -10,7 +10,7 @@ describe 'Anagram' do
     expect(ba).to eq(['ab'])
   end
 
-  xit 'should detect an anagram' do
+  it 'should detect an anagram' do
     detector = Anagram.new('listen')
     listen = detector.match %w(enlists google inlets banana)
     expect(listen).to eq(['inlets'])
